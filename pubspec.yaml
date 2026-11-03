@@ -1,0 +1,42 @@
+name: oro_bible_college_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  file_picker: ^10.3.10
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+  sqflite_common_ffi: ^2.3.0
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Added the launcher icons package here
+  flutter_launcher_icons: ^0.13.1
+
+# Launcher Icons Configuration
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/images/Obc_App.jpg"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  adaptive_icon_background: "#ffffff" # Background color for Android Oreo+
+  adaptive_icon_foreground: "lib/images/Obc_App.jpg" 
+
+flutter:
+  assets:
+    - lib/images/School_Logo.jpg
+    - lib/images/School_Bg.png
+
+  uses-material-design: true
